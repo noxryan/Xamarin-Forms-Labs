@@ -179,7 +179,7 @@ namespace XLabs.Platform.Device
                 height = (int)bounds.Height;
                 // MainScreen.CurrentMode will reflect zoom mode on iOS8+
                 CGSize size = UIScreen.MainScreen.CurrentMode.Size;
-                if((Version == PhoneType.IPhone6 && size.Height == 1704) || (Version == PhoneType.IPhone6Plus && size.Height == 2001))
+                if((Version == PhoneType.IPhone6 && size.Height == 1136) || (Version == PhoneType.IPhone6Plus && size.Height == 2001))
                 {
                     width = (int)size.Width / (int)UIKit.UIScreen.MainScreen.Scale;
                     height = (int)size.Height / (int)UIKit.UIScreen.MainScreen.Scale;
